@@ -77,7 +77,6 @@ public class HelloApplication extends Application implements EventHandler<Action
 
     public static void main(String[] args) {
         launch(HelloApplication.class);
-        System.out.println("Hello world!");
     }
 
     @Override
@@ -107,7 +106,7 @@ public class HelloApplication extends Application implements EventHandler<Action
             this.textTurn.setText("Turn: X");
 
         }
-        System.out.printf("Button pressed: %s \n", sourceButton.getId());
+
 
         int countX = 0;
         int countO = 0;
@@ -150,36 +149,29 @@ public class HelloApplication extends Application implements EventHandler<Action
 
         if (row1.equals("XXX") || row1.equals("OOO")) {
             foundWinner = true;
-            this.textTurn.setText("The end!");
-            System.out.println("true");
+
+
         } else if (row2.equals("XXX") || row2.equals("OOO")) {
             foundWinner = true;
-            this.textTurn.setText("The end!");
-            System.out.println("true");
+
         } else if (row3.equals("XXX") || row3.equals("OOO")) {
             foundWinner = true;
-            this.textTurn.setText("The end!");
-            System.out.println("true");
+
         } else if (row4.equals("XXX") || row4.equals("OOO")) {
             foundWinner = true;
-            this.textTurn.setText("The end!");
-            System.out.println("true");
+
         } else if (row5.equals("XXX") || row5.equals("OOO")) {
             foundWinner = true;
-            this.textTurn.setText("The end!");
-            System.out.println("true");
+
         } else if (row6.equals("XXX") || row6.equals("OOO")) {
             foundWinner = true;
-            this.textTurn.setText("The end!");
-            System.out.println("true");
+
         } else if (row7.equals("XXX") || row7.equals("OOO")) {
             foundWinner = true;
-            this.textTurn.setText("The end!");
-            System.out.println("true");
+
         } else if (row8.equals("XXX") || row8.equals("OOO")) {
             foundWinner = true;
-            this.textTurn.setText("The end!");
-            System.out.println("true");
+
         }
         return foundWinner;
     }
